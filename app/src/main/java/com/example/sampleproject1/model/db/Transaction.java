@@ -1,70 +1,68 @@
 package com.example.sampleproject1.model.db;
 
-import androidx.databinding.BaseObservable;
+public class Transaction {
 
-public class Transaction {//extends BaseObservable {
-    
     private String image;
-    private String itemName;
-    private String refundAmt;
+    private String item_name;
+    private String refund_amt;
     private String serial;
     private String description;
-    private String refundDate;
-    
-    public Transaction(String image, String itemName, String refundAmt, String serial, String description, String refundDate) {
+    private String refund_date;
+
+    public Transaction(String image, String item_name, String refund_amt, String serial, String description, String refund_date) {
         this.image = image;
-        this.itemName = itemName;
-        this.refundAmt = refundAmt;
+        this.item_name = item_name;
+        this.refund_amt = refund_amt;
         this.serial = serial;
         this.description = description;
-        this.refundDate = refundDate;
+        this.refund_date = refund_date;
     }
-    
+
     public String getImage() {
         return image;
     }
-    
+
     public void setImage(String image) {
         this.image = image;
     }
-    
-    public String getItemName() {
-        return itemName;
+
+    public String getItem_name() {
+        return item_name;
     }
-    
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
+
+    public void setItem_name(String item_name) {
+        this.item_name = item_name;
     }
-    
-    public String getRefundAmt() {
-        return refundAmt;
+
+    public String getRefund_amt() {
+        return refund_amt;
     }
-    
-    public void setRefundAmt(String refundAmt) {
-        this.refundAmt = refundAmt;
+
+    public void setRefund_amt(String refund_amt) {
+        this.refund_amt = refund_amt;
     }
-    
+
     public String getSerial() {
         return serial;
     }
-    
+
     public void setSerial(String serial) {
         this.serial = serial;
     }
-    
+
     public String getDescription() {
         return description;
     }
-    
+
     public void setDescription(String description) {
         this.description = description;
     }
-    
-    public String getRefundDate() {
-        return refundDate;
+
+    public String getRefund_date() {
+        return refund_date;
     }
-    
-    public void setRefundDate(String refundDate) {
-        this.refundDate = refundDate;
+
+    public void setRefund_date(String refund_date) {
+        this.refund_date = refund_date;
     }
 }

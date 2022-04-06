@@ -39,6 +39,7 @@
         <TextView
             android:id="@+id/tv_refund_amount"
             android:hint="Transaction_amount"
+            android:gravity="end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

@@ -27,8 +27,8 @@ public class RecyclerViewNetworkDataAdapter extends RecyclerView.Adapter<Recycle
    private Context mContext;
    
    public RecyclerViewNetworkDataAdapter(List<Transaction> transactionList, Context context) {
-      mTransactionList = transactionList;
-      mContext = context;
+      this.mTransactionList = transactionList;
+      this.mContext = context;
    }
    
    @NonNull
@@ -57,11 +57,11 @@ public class RecyclerViewNetworkDataAdapter extends RecyclerView.Adapter<Recycle
         This has to be each UI element we want the coming data to be binded with.
          */
    
-//      Glide.with(mContext)
-//           .load(mTransactionList.get(position).getImage()).centerCrop()
-//           .placeholder(R.drawable.ic_launcher_background).into(holder.mOneRowTransactionBinding.ivUserimage);
-      holder.mOneRowTransactionBinding.tvTransactionName.setText(mTransactionList.get(position).getItemName());
-      holder.mOneRowTransactionBinding.tvRefundAmount.setText(mTransactionList.get(position).getRefundAmt());
+      Glide.with(mContext)
+           .load(mTransactionList.get(position).getImage()).centerCrop()
+           .placeholder(R.drawable.ic_launcher_background).into(holder.mOneRowTransactionBinding.ivUserimage);
+      holder.mOneRowTransactionBinding.tvTransactionName.setText(mTransactionList.get(position).getItem_name());
+      holder.mOneRowTransactionBinding.tvRefundAmount.setText(mTransactionList.get(position).getRefund_amt());
    }
    
    @Override
